@@ -1,0 +1,451 @@
+    
+
+    body{
+        background-color: #f5ebdc !important;
+    }
+  /* Ocultar os links de navegação no header em telas menores */
+  @media (max-width: 768px) {
+    .header-out .main-nav {
+        display: none !important; /* Usa !important para forçar a aplicação da regra */
+    }
+}
+
+
+    
+    
+
+    /*--------------------------Header------------------------------------------------*/
+
+
+    .header-out{
+        background-color: #f5ebdc;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    .main-nav {
+        display: flex;
+        gap: 20px; /* Espaço entre os links */
+        margin-left: 20px; /* Ajuste de espaçamento à esquerda do menu */
+    }
+
+    .main-nav .nav-link {
+        font-family: "Flame Regular";
+        
+        color: #502314;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .main-nav .nav-link:hover {
+        color: #d62300; /* Cor ao passar o mouse */
+    }
+
+    #top.container-fluid {
+        padding: 0;
+        max-width: 100vw;
+    }
+
+    .logo-img{
+        width: 65px;
+    }
+    .header-but-1{
+        background-color: #d62300;
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+        margin-right: 0.25rem !important;
+    }
+    .header-but-1:hover{
+        background-color: #b44731;
+    }
+    .header-but-2{
+        background-color: maroon;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .header-but-2:hover{
+        background-color: #b44731;
+    }
+    .head-bar{
+        font-size: 24px;
+        color: rgb(80, 35, 20);
+    }
+    .ab{
+        width: 48%;
+    }
+    .abc{
+        width: 52%;
+    }
+    .divider1{
+        background-color: #d2c8bd;
+        height: 1px;
+        width: 100%;
+        margin-top: 55px;
+    }
+    .divider{
+        background-color: #d2c8bd;
+        height: 1px;
+        width: 100%;
+    }
+    .divider2{
+        background-color: #d2c8bd;
+        margin-top: 55px;
+        width: 100%;
+    }
+    
+ /*--------------------------SIDEBAR------------------------------------------------*/
+ @media (max-width: 768px) {
+    .card-main {
+        padding-left: 5%; /* Reduz o espaçamento lateral */
+        padding-right: 5%;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribui o conteúdo de forma mais uniforme */
+        height: 100%; /* Faz com que o cartão ocupe toda a altura disponível */
+    }
+    .card-heading, .card-text, .card-button-in {
+        margin: 0; /* Remove margens extras */
+    }
+    .card-button-in {
+        font-size: 16px; /* Ajusta o tamanho do texto do botão */
+        padding: 8px 16px; /* Ajusta o padding para se adaptar ao cartão menor */
+        display: block;
+        margin: 0 auto; /* Centraliza o botão */
+    }
+    
+}
+
+
+.sidebar {
+    top: 14%;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: -250px;
+    background-color: #f5ebdc; /* Cor de fundo */
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1050;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    font-family: "Flame Sans";
+        
+    color: #502314;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    color: #7b3f00;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: inherit; /* Mantém a cor original */
+}
+
+/* Linha divisória entre links */
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #b5651d;
+    margin: 10px 20px;
+}
+
+
+
+/* Ativar a barra lateral e overlay */
+.sidebar-active {
+    left: 0;
+}
+
+.overlay-active {
+    display: block;
+}
+
+/* Botão de alternância de menu */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #7b3f00; /* Cor do ícone */
+    z-index: 1060; /* Certifique-se de que esteja acima da barra lateral */
+}
+
+
+    /*--------------------------HERO------------------------------------------------*/
+
+    .hero {
+        background: linear-gradient(to bottom, #502314 60%, transparent 50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+
+    .heroend {
+        width: 65%;
+    }
+    .herostart {
+        
+        transform: translateX(40%);
+    }
+
+    .herobuttons {
+        margin-top: 10px;
+        padding-left: 20px; /* Ajuste para alinhar com o texto */
+    }
+    .herotextin{
+        font-family: "Flame Bold";
+        color: #F5EBDC;
+        font-size: 60px;
+        font-weight : 400;
+        text-align: start;
+        
+    }
+    .herotextin2{
+        font-family: "Flame Regular";
+        color: #F5EBDC;
+        font-size: 20px;
+        font-weight:50;
+        text-align: start;
+        
+    }
+    .herobutton-1{
+        background-color: #d62300;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+        max-width: 280px !important;
+        text-align: center;
+        display: block;
+    }
+    .herobutton-1:hover{
+        background-color: maroon;
+    }
+
+    .heroimg{
+        width: 55%;
+        transform: translateY(22%);
+        transform: translateX(45%);
+    }
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heroimg-2{
+        display: none;
+    }
+    .heroimg-450{
+        display: none;
+    }
+    .herobuttons{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .herobuttons-2{
+        display: none;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+
+
+    
+    /*--------------------------CARD------------------------------------------------*/
+    .card-main{
+        padding-left: 15%;
+        padding-top: 8px;
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        padding-right: 15%;
+    } 
+    .card{
+        
+        width: 49%;
+        transition-duration: 0.3s;
+        transition-property: all;
+        border-radius: 12px !important;
+    }
+    .card:hover{
+        transform: scale(1.015);
+    }
+    .card-heading{
+        font-family: Flame Regular;
+        font-size: 24px;
+        font-weight: 400;
+        color: #502314;
+    }
+    .card-img{
+        border-top-left-radius: 12px !important;
+        border-top-right-radius: 12px !important;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .xyz{
+        margin-top: 3rem;
+        text-align: end;
+    }
+    .xy{
+        text-align: end;
+    }
+    .card-text{
+        font-size: 13px;
+        font-weight: 400;
+        font-family: Flame Sans;
+        color: #502314;
+    }
+    .card-in{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .card-button-in{
+        text-decoration: none;
+        border: 1px solid #d62300;
+        color: #d62300;
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+        text-align: center;
+        font-family: Flame Sans;
+    }
+    .card-button-in:hover{
+        background-color: #ffebe7;
+    }
+
+
+
+    /*--------------------------Copywrite------------------------------------------------*/
+  
+    
+
+    .footer-container {
+        background-color: #2d0601; /* Fundo escuro */
+        color: #f5ebdc; /* Cor de texto clara */
+        padding: 30px 0; /* Aumenta o padding para dar mais altura */
+        text-align: center;
+        font-family: "Flame Sans";
+        font-size: 12px;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap; /* Permite quebra de linha */
+        justify-content: left; /* Centraliza os links */
+        gap: 10px; /* Espaçamento entre os links */
+        color: #f5ebdc;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .footer-links a {
+        color: #f5ebdc;
+        text-decoration: none;
+        margin: 0 10px; /* Mais espaçamento entre os links */
+    }
+    
+    .footer-links a:hover {
+        text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+        color: inherit; /* Mantém a cor original */
+    }
+    
+    .footer-divider {
+        height: 1px;
+        background-color: #8b3a1d;
+        margin: 60px 0; /* Aumenta o espaçamento acima e abaixo da linha */
+    }
+    
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 10px; /* Adiciona espaçamento interno no topo */
+    }
+    
+    .footer-main .copyright-text {
+        margin: 0;
+        font-size: 14px;
+        transform: translateY(-250%);
+    }
+    
+    .footer-main .copyright-textin {
+        font-family: "Flame Bold";
+        color: #F5EBDC;
+        font-size: 25px;
+        font-weight: 400;
+        
+        transform: translateY(-50%);
+    }
+    
+    .footer-social a {
+        color: #f5ebdc;
+        margin-left: 15px; /* Aumenta o espaçamento entre os ícones */
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .footer-social a:hover {
+        color: #d62300; /* Cor de destaque ao passar o mouse */
+    }
+    
+
+    @font-face {
+        font-family: "Flame Bold";
+        src: url("../fonts/FlameBold.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Flame Sans";
+        src: url("../fonts/FlameSans.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Flame Regular";
+        src: url("../fonts/FlameRegular.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Flame Condensed";
+        src: url("../fonts/FlameCondensed.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+

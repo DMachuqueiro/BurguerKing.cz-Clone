@@ -1,0 +1,246 @@
+/* Estilos para a seção hero */
+/* Estilos para a seção hero */
+.restaurants-hero {
+    background-color: #d62300;
+    padding: 13px 0; /* Reduzir altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+
+.hero-title {
+    font-family: "Flame Bold";
+    color: #F5EBDC;
+    font-size: 28px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Estilos para o link "Map" */
+.hero-map-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px; /* Menor para combinar com a imagem */
+    background-color: transparent; /* Sem fundo inicialmente */
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: "Flame Sans";
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-map-link i {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+/* Efeito de hover */
+.hero-map-link:hover {
+    background-color: #a02000; /* Fundo vermelho mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+
+
+
+
+
+
+
+/* Estilo da barra de pesquisa */
+.location-search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.floating-label {
+    position: relative;
+    width: 100%;
+}
+
+.floating-label input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #7b3f00;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: 'Flame Sans';
+    color: #7b3f00;
+    box-shadow: none;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.floating-label input::placeholder {
+    color: transparent; /* Esconde o placeholder para mostrar apenas o label */
+}
+
+.floating-label label {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    color: #7b3f00;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    font-family: 'Flame Sans';
+    background-color: transparent;
+    padding: 0 5px;
+}
+
+/* Quando o input está em foco ou contém texto */
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 15px;
+    font-size: 12px;
+    color: #d93600;
+    background-color: #fff; /* Retângulo branco atrás do texto */
+    padding: 0 5px;
+}
+
+/* Estilo do botão de busca */
+.location-search-bar .search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #7b3f00;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+}
+
+.location-search-bar .search-button i {
+    font-size: 18px;
+}
+
+/* Efeito de hover */
+.floating-label input:hover,
+.floating-label input:focus {
+    border-color: #0c0b0a;
+    box-shadow: 0 0 5px rgba(217, 54, 0, 0.3);
+}
+
+/* Estilo das abas */
+/* Estilo das abas */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1; /* Garante que o texto das abas fique acima da linha */
+}
+
+.tab {
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #7b3f00;
+    transition: color 0.3s;
+    text-align: center;
+    flex:1; /* Distribui o espaço igualmente entre as abas */
+}
+
+.tab.active {
+    color: #d93600;
+}
+
+/* Linha de fundo e linha ativa */
+.tab-line-container {
+    position: relative;
+    width: 100%;
+    max-width: 1050px; /* Largura total da linha */
+    margin: 0 auto 20px auto;
+    height: 3px;
+    background-color: #ccc; /* Cor cinza para a linha de fundo */
+    z-index: 0; /* Coloca a linha atrás das abas */
+}
+
+.tab-line {
+    position: absolute;
+    height: 3px;
+    width: 50%; /* Ocupa metade da largura do contêiner */
+    background-color: #d93600; /* Cor vermelha para a linha ativa */
+    transition: left 0.3s ease; /* Transição suave para o movimento */
+    left: 0; /* Definido para a aba inicial */
+}
+
+
+.tab.active[data-tab="nearby"] + .tab-line-container .tab-line {
+    left: 0;
+}
+
+.tab.active[data-tab="favorites"] + .tab-line-container .tab-line {
+    left: 50%;
+}
+
+/* Estilo da área de informações sobre localização */
+.location-info {
+    font-family: 'Flame Sans';
+    text-align: center;
+    color: #7b3f00;
+    margin-top: 30px;
+}
+
+.location-info .location-image {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.location-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.location-info p {
+    font-size: 16px;
+}
+
+/* Estilo para o botão */
+.location-button {
+    background-color: #d93600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.location-button:hover {
+    background-color: #a02000;
+}
+
+/* Estilos para controlar a visibilidade do conteúdo das abas */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+

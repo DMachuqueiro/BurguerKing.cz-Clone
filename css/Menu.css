@@ -1,0 +1,68 @@
+.Menu-hero {
+    background-color: #502314;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; /* Ajuste a altura conforme necessário */
+    width: 100%; /* Garante que ocupe toda a largura */
+    margin: 0 auto;
+}
+.Menu-herotextin {
+    font-family: "Flame Bold";
+    color: #F5EBDC;
+    font-size: 60px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0; /* Remove margens adicionais */
+    white-space: nowrap; /* Garante que o texto fique em uma linha */
+}
+
+
+
+
+/*---------------------------------Card-----------------------------------------------------*/
+
+
+
+.menu-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5ebdc;
+}
+
+
+.menu-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep text color */
+    display: block; /* Make the entire card area clickable */
+}
+
+.menu-card-img {
+    width: 100%;
+    height: auto;
+    background-color: #E74C3C; /* Cor de fundo da imagem */
+}
+
+.menu-card-text {
+    font-family: "Flame Bold";
+    color: #502314;
+    font-size: 24px;
+    padding: 15px 0;
+    background-color: #f5ebdc;
+    border-top: 1px solid #e1e1e1;
+}
+.empty-card {
+    background-color: transparent;
+    box-shadow: none;
+}

@@ -1,0 +1,48 @@
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section {
+    background-color: #f5ebdc;
+    padding: 100px;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: left;
+    font-family: "Flame Sans", sans-serif;
+    color: #502314;
+    line-height: 1.8;
+}
+
+
+.contact-content {
+    font-family: "Flame Sans", sans-serif;
+    color: #502314;
+    line-height: 1.8;
+}
+
+
+.contact-heading {
+    font-family: "Flame Bold";
+    color: #d62300;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-email {
+    color: #d62300;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+
+.contact-heading {
+    font-family: "Flame Sans";
+    color: #d62300; /* This is just an example, adjust if necessary */
+}
+
+
